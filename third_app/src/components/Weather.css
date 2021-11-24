@@ -1,0 +1,40 @@
+.Weather{
+    margin-top: 15%;
+    text-align: center;
+    background: url("https://cdn.pixabay.com/photo/2012/06/08/06/19/clouds-49520__340.jpg");
+    width: 70%;
+    height: 100vh;
+    background-size: cover;
+    margin-left: 15%;
+}
+
+.Weather h1{
+    font-size: 50px;
+}
+
+.Weather p{
+    font-size: 20px;
+}
+
+.Weather input{
+    width: 50%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+}
+
+.Weather button{
+    font-size: 20px;
+    width: 12%;
+    padding: 10px 15px;
+    color: mediumspringgreen;
+    border-radius: 7px;
+    border: none;
+}
+
+.Weather p:last-child{
+    width: 52%;
+    padding: 20px 0px;
+    border-radius: 15px;
+    margin-left: 24%;
+}

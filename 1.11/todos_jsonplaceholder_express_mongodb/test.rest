@@ -1,0 +1,33 @@
+GET http://localhost:8080/todos
+
+###
+
+POST http://localhost:8080/todos 
+Content-Type: application/json
+
+{
+    "itsUserId": 1,
+    "itsId": 5,
+    "itsTitle": "hello",
+    "itsCompleted": true
+}
+
+
+###
+
+DELETE http://localhost:8080/todos/617fee07d5937260453ab230
+###
+
+PATCH http://localhost:8080/todos/617fee07d5937260453ab231
+Content-Type: application/json
+
+
+{
+    "itsTitle": "hello there"
+}
+
+###
+
+GET http://localhost:8080/todos/617fa9bd4a8180f45865a670
+
+###

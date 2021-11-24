@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+</head>
+<!-- props זה קלט שרירותי שמתקבל בקומפוננטה ובפונקציות -->
+<body>
+    <main id="app"></main>
+    <script type="text/babel">
+        const domElemnt = document.getElementById("app");
+        const name = "shmuel";
+        const newCar = {name:"mazda", year:2021, price:30000};
+
+        function Hello(){
+            return <div><h2> hi </h2><SayHi/> </div>
+        }
+
+        function Car(){
+            return<div><h2>{newCar.name} {newCar.year} {newCar.price} </h2></div>
+        }
+
+        function SayHi(){
+            return <h2> {name} </h2>
+        }
+
+        function Header(){
+            return<h2> header </h2>
+        }
+
+        function Main(){
+            return<h2> main </h2>
+        }
+
+        function Footer(){
+            return<h2> footer </h2>
+        }
+
+        function Welcome(props) {
+            return <h2> hello {props.name} </h2>
+        }
+
+        function Welcome2(props) {
+            return <h2> hello {props.name} {props.age} </h2>
+        }
+
+        function Picture(props) {
+            return <img src={props.image}></img>
+        }
+
+        function Video(props) {
+            return <video width="320" height="240" controls autoPlay> <source src={props.url} /></video>
+        }
+
+        ReactDOM.render(
+            <div>
+                <Header/>
+                <Main/>
+               <Hello/><br></br>
+               <Car/>
+               <Car/>
+               <Car/>
+               <Car/>
+               <Car/>
+               <Car/>
+               <Car/>
+               <Car/>
+               <Car/>
+               <Car/><br></br>
+               <SayHi/><br></br>
+               <Hello/><br></br>
+               <Welcome name = "shmuel" />
+               <Welcome name = "maayan" />
+               <Welcome name = "ezra" />
+               <Welcome name = "haim" />
+               <Welcome name = "uri" />
+               <Welcome name = "nadav" />
+               <Welcome name = "yakov" />
+               <Welcome name = "bari" />
+               <Welcome name = "anat" />
+               <Welcome name = "ruti" /><br></br>
+               <Welcome2 name = "shmuel" age = "27" />
+               <Welcome2 name = "maayan" age = "28" />
+               <Welcome2 name = "ezra" age= "28"/>
+               <Welcome2 name = "haim" age= "29"/>
+               <Welcome2 name = "uri" age= "32"/>
+               <Welcome2 name = "nadav" age= "29"/>
+               <Welcome2 name = "yakov" age= "27"/>
+               <Welcome2 name = "bari" age= "29"/>
+               <Welcome2 name = "anat" age= "27"/><br></br>
+               <Picture image = "https://cdn.pixabay.com/photo/2019/05/31/02/08/iron-man-4241268__340.jpg" />
+               <Picture image = "https://cdn.pixabay.com/photo/2015/03/11/01/33/hulk-667988__340.jpg" />
+               <Picture image = "https://cdn.pixabay.com/photo/2019/08/01/21/40/spiderman-4378357__340.png" /><br></br>
+               <Video url = "https://player.vimeo.com/external/561602202.sd.mp4?s=d883567d331dc864aa85fe7ede2a88eba4dc6235&profile_id=165"/>
+               <Video url = "https://player.vimeo.com/external/440261020.hd.mp4?s=cedde1e8f0ffda3ae921dce8562c873bbdea45fe&profile_id=174" />
+               <Video url = "https://player.vimeo.com/external/447124501.sd.mp4?s=cac3ccabe490f2298822a883c9ed1f0b598631f2&profile_id=164" />
+               <Footer/>
+            </div>,
+            domElemnt);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+GET http://localhost:8080/comments
+
+###
+
+POST http://localhost:8080/comments
+Content-Type: application/json
+
+{
+    "name": "shmuel",
+    "body": "hello ther",
+    "email": "shmuelmoche@gmail.com"
+}
+
+###
+
+DELETE http://localhost:8080/commenst/1
