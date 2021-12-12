@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+  /* margin-top: 15px; */
+}
+
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 80px;
+  color: white;
+  font-size: 35px;
+  align-items: center;
+}
+
+.links{
+  text-decoration:none;
+  /* margin-left: 1px; */
+  padding : 10px;
+  display: inline-block;
+  /* width:60%; */
+  /* height:20px; */
+  color: white;
+  font-size: 15px;
+}
+
+.title{
+  /* width: 35%; */
+  margin-left: 1%;
+}
+
+.links:hover{
+  background-color: gold;
+  color: black;
+  transition: 1s;
+}
+
+
+body{
+  background-color: gray;
+}
+
+.footer{
+  margin-top: 33%;
+  background-color: rgb(0,0,0);
+  color: white;
+}
+
+.footer img{
+  margin: 3px;
+}
