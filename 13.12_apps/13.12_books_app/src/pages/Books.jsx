@@ -12,7 +12,7 @@ export default class Books extends Component {
           }
           const booksElement = this.props.books.map((book, index) => (
             <li key={index}>
-              {book.name}, {book.author}{' '}
+              {book.name}, {book.author}
               <button
                 onClick={() => {
                   this.props.setCuurrentBook(
