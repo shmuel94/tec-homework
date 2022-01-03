@@ -30,7 +30,7 @@ function App() {
   })}
   </tbody>
   </table>
-  <PerformanceProblem/>
+  {/* <PerformanceProblem/> */}
   </div>
   )
 }
